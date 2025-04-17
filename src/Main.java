@@ -30,6 +30,7 @@ public class Main {
                     System.out.println("File successfully deleted.");
                 }
             }
+            sc.close();
         }
         catch (FileNotFoundException e) {
             System.out.println("Error: File not found. " + e.getMessage());
