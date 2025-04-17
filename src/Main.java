@@ -24,12 +24,13 @@ public class Main {
             if (file.exists()) {
                 System.out.println("File successfully copied.");
                 fos.close();
-                fis.close();
 
                 if (file.delete()) {
                     System.out.println("File successfully deleted.");
                 }
             }
+
+            fis.close();
             sc.close();
         }
         catch (FileNotFoundException e) {
